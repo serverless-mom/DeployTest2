@@ -1,0 +1,9 @@
+{
+  "Resources": {
+    "LogErrors": {
+      "Type": "Custom::LogErrors",
+      "Properties": {
+"ServiceToken": { "Fn::GetAtt": [ @{node.Log Errors.resourceId}, "Arn" ] }    }
+  }
+}
+}
